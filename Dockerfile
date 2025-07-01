@@ -1,5 +1,5 @@
 # Use the official Node.js image
-FROM node:22
+FROM node:18.9.1
 
 # Set working directory
 WORKDIR /app

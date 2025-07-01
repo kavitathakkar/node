@@ -2,6 +2,8 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+const cors = require('cors'); 
+
 
 //local imports
 const requestLogger = require('./utilities/requestLogger');
@@ -29,6 +31,7 @@ app.use(express.urlencoded({ extended:true}));
 app.use(requestLogger);
 app.use('/', router);
 app.use(errorLogger);
+app.use(cors());
 
 
 const port =5000;
