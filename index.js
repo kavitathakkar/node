@@ -11,7 +11,7 @@ const errorLogger = require('./utilities/errorLogger');
 const router = require('./routes/router');
 
 //mongo connection
-const mongoURI = 'mongodb://localhost:27017/LoanHub';
+const mongoURI = 'mongodb://mongodb:27017/LoanHub';
 mongoose
 	.connect(mongoURI, {
 		useNewUrlParser:true,
